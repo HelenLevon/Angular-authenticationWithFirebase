@@ -1,0 +1,13 @@
+<main>
+	
+	<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+		<div class="container">
+			<a routerLink='gallery' (click)="ifUser()" class="navbar-text navbar-left navbar-link" *ngIf="ifUser()">Gallery</a>
+			<a (click)="logout()" class="navbar-text navbar-right navbar-link">Logout</a>
+	
+		</div>
+	</nav>
+
+
+	<router-outlet></router-outlet>
+</main>
